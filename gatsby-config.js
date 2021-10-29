@@ -3,11 +3,12 @@ module.exports = {
     title: `Elvina's Blog`,
     author: {
       name: `Elvina Galimova`,
-      summary: `who lives and works in Moscow.`,
+      summary: `from Moscow.`,
     },
     description: `Photography blog.`,
     social: {
       twitter: `orange_idiot`,
+      instagram: `orange_idiot`
     },
   },
   plugins: [
@@ -98,6 +99,7 @@ module.exports = {
                     frontmatter {
                       title
                       date
+                      image
                     }
                   }
                 }
