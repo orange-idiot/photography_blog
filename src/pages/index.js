@@ -41,7 +41,7 @@ const BlogIndex = ({ data, location }) => {
                 <header>
                   <h2 className="post-title">
                     <Link to={post.fields.slug} itemProp="url">
-                      <img className="post-image" src={`../images/${post.frontmatter.image}`}/>
+                      <img alt={post.frontmatter.image} className="post-image" src={`../images/${post.frontmatter.image}`}/>
                       <span itemProp="headline">{title}</span>
                     </Link>
                   </h2>

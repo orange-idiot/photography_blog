@@ -18,7 +18,7 @@ const contacts = [
     },
 ]
 
-const Contacts = ({ data, location }) => {
+const Contacts = ({ location }) => {
   const siteTitle = `Elvina's blog`
 
   return (
@@ -31,7 +31,7 @@ const Contacts = ({ data, location }) => {
         <ul className="contacts-list">
           {contacts.map(({ title, link }) => (
             <li key={title}>
-              <a href={link} target="_blank">{title}</a>
+              <a href={link} target="_blank" rel="noreferrer">{title}</a>
             </li>
           ))}
         </ul>
