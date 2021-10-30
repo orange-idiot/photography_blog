@@ -41,11 +41,11 @@ const BlogIndex = ({ data, location }) => {
                 <header>
                   <h2 className="post-title">
                     <Link to={post.fields.slug} itemProp="url">
+                      <div className="post-title-mask" />
                       <img alt={post.frontmatter.image} className="post-image" src={`../images/${post.frontmatter.image}`}/>
-                      <span itemProp="headline">{title}</span>
+                      <span className="post-title-text" itemProp="headline">{title}</span>
                     </Link>
                   </h2>
-                  <small>{post.frontmatter.date}</small>
                 </header>
               </article>
             </li>
