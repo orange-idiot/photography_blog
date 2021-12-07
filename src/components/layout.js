@@ -1,6 +1,7 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import Nav from './nav'
+import { StaticImage } from "gatsby-plugin-image"
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
@@ -12,6 +13,16 @@ const Layout = ({ location, title, children }) => {
       <>
       <Nav />
       <h1 className="main-heading">
+        <StaticImage
+          className="bio-avatar"
+          layout="fixed"
+          formats={["auto", "webp", "avif"]}
+          src="../images/profile-pic.jpg"
+          width={50}
+          height={50}
+          quality={95}
+          alt="Profile picture"
+        />
         <Link to="/">{title}</Link>
       </h1>
       </>
